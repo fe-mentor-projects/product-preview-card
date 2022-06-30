@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Outfit:wght@200;400;700&display=swap");
+
+body {
+  background-color: #f2eae2;
+  font-family: "Montserrat";
+  margin: 0 auto;
+}
+
+button:hover {
+  background-color: #1a4032;
+  cursor: pointer;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+#contentContainer {
+  border-radius: 0px 0px 10px 10px;
+}
+
+#perfume {
+  font-weight: 300;
+  font-size: 0.9rem;
+  letter-spacing: 0.2rem;
+  padding-top: 2%;
+}
+#perfumeName {
+  font-weight: 400;
+}
+
+#description {
+  color: grey;
+}
+
+#pricing {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#regPrice {
+  text-decoration: line-through;
+  font-size: 0.8rem;
+  color: grey;
+}
+#salePrice {
+  padding-right: 25%;
+  font-size: 2.5rem;
+  color: #3d8168;
+}
+
+button {
+  width: 95%;
+  height: 10vh;
+  border: 1px solid #3d8168;
+  border-radius: 10px;
+  background-color: #3d8168;
+  color: white;
+  font-size: 1.5rem;
+}
+
+button img {
+  height: 35%;
+  margin-right: 2%;
+  color: white;
+}
+
+@media only screen and (min-width: 400px) {
+  #mainContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+  }
+
+  #imgContainer {
+    width: 90%;
+  }
+  #perfumeImage {
+    width: 100%;
+    margin-top: 50%;
+    border-radius: 10px 10px 0px 0px;
+    margin-bottom: -5px;
+  }
+
+  #contentContainer {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 90%;
+    padding-bottom: 3%;
+    margin-top: 0;
+  }
+
+  #contentContainerTwo {
+    width: 90%;
+  }
+  .attribution {
+    padding: 10px;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6%;
+  }
+  #mainContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 80%;
+  }
+  .attribution {
+    display: none;
+  }
+
+  #imgContainer {
+    height: 64.5vh;
+    width: 75%;
+  }
+
+  #perfumeImage {
+    border-radius: 10px 0px 0px 10px;
+    height: 100%;
+    margin-top: 0;
+  }
+
+  #contentContainer {
+    border-radius: 0px 10px 10px 0px;
+    height: 60vh;
+  }
+}
